@@ -1,15 +1,54 @@
-[gd_scene load_steps=3 format=3 uid="uid://bckfbkenmmo4q"]
+[gd_scene load_steps=6 format=3 uid="uid://bckfbkenmmo4q"]
 
 [ext_resource type="Texture2D" uid="uid://dlh0ta3x1xcpx" path="res://cute-white-duck.png" id="1_ss0ey"]
 [ext_resource type="Texture2D" uid="uid://mrjf7jpar3wj" path="res://cute-white-duck-pet-animal-png.png" id="2_smur8"]
+[ext_resource type="Texture2D" uid="uid://cxkkif1durnaf" path="res://lake.png" id="3_nor8o"]
+[ext_resource type="Texture2D" uid="uid://dtn4ikdohv6k3" path="res://tree.png" id="4_b0ivw"]
+[ext_resource type="Texture2D" uid="uid://m4vpy73akbbx" path="res://chick.png" id="5_12cb7"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Duck" type="Sprite2D" parent="."]
-position = Vector2(738, 195)
-scale = Vector2(0.96, 0.755)
+position = Vector2(243, 264)
+scale = Vector2(0.775, 0.6325)
 texture = ExtResource("1_ss0ey")
 
 [node name="Robot" type="Sprite2D" parent="."]
-position = Vector2(379, 432)
+position = Vector2(866, 416)
+scale = Vector2(0.78, 0.86)
 texture = ExtResource("2_smur8")
+
+[node name="Lake" type="Sprite2D" parent="."]
+position = Vector2(476, 378)
+scale = Vector2(1.04602, 1.06925)
+texture = ExtResource("3_nor8o")
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(989, 194)
+scale = Vector2(0.682836, 0.64)
+texture = ExtResource("4_b0ivw")
+
+[node name="Duck2" type="Sprite2D" parent="."]
+position = Vector2(1037.25, 554.125)
+scale = Vector2(1.0425, 0.87125)
+texture = ExtResource("1_ss0ey")
+
+[node name="Chick" type="Sprite2D" parent="."]
+position = Vector2(134, 354)
+scale = Vector2(0.048186, 0.0442708)
+texture = ExtResource("5_12cb7")
+
+[node name="Chick2" type="Sprite2D" parent="."]
+position = Vector2(294, 508)
+scale = Vector2(0.048186, 0.0442708)
+texture = ExtResource("5_12cb7")
+
+[node name="Cute-white-duck-pet-animal-png" type="Sprite2D" parent="."]
+position = Vector2(483, 210.75)
+scale = Vector2(0.6, 0.6475)
+texture = ExtResource("2_smur8")
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(695, 146)
+scale = Vector2(0.554904, 0.468333)
+texture = ExtResource("4_b0ivw")
