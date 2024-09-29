@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bckfbkenmmo4q"]
+
+[ext_resource type="Texture2D" uid="uid://dlh0ta3x1xcpx" path="res://cute-white-duck.png" id="1_ss0ey"]
+[ext_resource type="Texture2D" uid="uid://mrjf7jpar3wj" path="res://cute-white-duck-pet-animal-png.png" id="2_smur8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Duck" type="Sprite2D" parent="."]
+position = Vector2(738, 195)
+scale = Vector2(0.96, 0.755)
+texture = ExtResource("1_ss0ey")
+
+[node name="Robot" type="Sprite2D" parent="."]
+position = Vector2(379, 432)
+texture = ExtResource("2_smur8")
