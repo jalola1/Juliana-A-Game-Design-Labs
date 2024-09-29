@@ -24,7 +24,7 @@ scale = Vector2(1.04602, 1.06925)
 texture = ExtResource("3_nor8o")
 
 [node name="Tree" type="Sprite2D" parent="."]
-position = Vector2(989, 194)
+position = Vector2(982, 189)
 scale = Vector2(0.682836, 0.64)
 texture = ExtResource("4_b0ivw")
 
@@ -49,6 +49,6 @@ scale = Vector2(0.6, 0.6475)
 texture = ExtResource("2_smur8")
 
 [node name="Tree2" type="Sprite2D" parent="."]
-position = Vector2(695, 146)
+position = Vector2(674, 145)
 scale = Vector2(0.554904, 0.468333)
 texture = ExtResource("4_b0ivw")
