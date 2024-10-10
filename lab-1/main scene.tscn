@@ -9,11 +9,11 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Duck" type="Sprite2D" parent="."]
-position = Vector2(243, 264)
+position = Vector2(132, 507)
 scale = Vector2(0.775, 0.6325)
 texture = ExtResource("1_ss0ey")
 
-[node name="Robot" type="Sprite2D" parent="."]
+[node name="Duck3" type="Sprite2D" parent="."]
 position = Vector2(866, 416)
 scale = Vector2(0.78, 0.86)
 texture = ExtResource("2_smur8")
@@ -34,8 +34,8 @@ scale = Vector2(1.0425, 0.87125)
 texture = ExtResource("1_ss0ey")
 
 [node name="Chick" type="Sprite2D" parent="."]
-position = Vector2(134, 354)
-scale = Vector2(0.048186, 0.0442708)
+position = Vector2(155, 367)
+scale = Vector2(0.0382653, 0.0283854)
 texture = ExtResource("5_12cb7")
 
 [node name="Chick2" type="Sprite2D" parent="."]
@@ -44,11 +44,21 @@ scale = Vector2(0.048186, 0.0442708)
 texture = ExtResource("5_12cb7")
 
 [node name="Cute-white-duck-pet-animal-png" type="Sprite2D" parent="."]
-position = Vector2(483, 210.75)
-scale = Vector2(0.6, 0.6475)
+position = Vector2(483.5, 236.375)
+scale = Vector2(0.485, 0.51375)
 texture = ExtResource("2_smur8")
 
 [node name="Tree2" type="Sprite2D" parent="."]
-position = Vector2(674, 145)
+position = Vector2(677, 136)
 scale = Vector2(0.554904, 0.468333)
+texture = ExtResource("4_b0ivw")
+
+[node name="Tree3" type="Sprite2D" parent="."]
+position = Vector2(118, 148)
+scale = Vector2(0.462953, 0.491667)
+texture = ExtResource("4_b0ivw")
+
+[node name="Tree4" type="Sprite2D" parent="."]
+position = Vector2(314, 122)
+scale = Vector2(0.299707, 0.3475)
 texture = ExtResource("4_b0ivw")
