@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://1evq1iht5f20"]
+
+[ext_resource type="Script" path="res://character_body_3d.gd" id="1_n5w0d"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pr8p3"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_26kse"]
+radius = 0.3
+height = 1.0
+
+[node name="Scene" type="Node3D"]
+transform = Transform3D(0.232851, 0, 0.972512, 0, 1, 0, -0.972512, 0, 0.232851, 0, -2.75437, -0.822037)
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(0.985298, 0, 0.170846, 0, 1, 0, -0.170846, 0, 0.985298, 0.214102, 0.488496, -0.578846)
+use_collision = true
+size = Vector3(10, 0.1, 12)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.58919, 1.33066, 1.68834)
+use_collision = true
+height = 1.5
+sides = 64
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -0.931527, 0.49222, -2.68228)
+script = ExtResource("1_n5w0d")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(0.259426, 0, -0.965763, 0, 1, 0, 0.965763, 0, 0.259426, 0.724605, 0.411384, -0.438658)
+shape = SubResource("CapsuleShape3D_pr8p3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(0.259426, 0, -0.965763, 0, 1, 0, 0.965763, 0, 0.259426, 0.693356, 0.551861, -0.454349)
+mesh = SubResource("CapsuleMesh_26kse")
+skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(-0.149698, 0.0940005, 0.984253, 0.0551842, 0.994713, -0.0866064, -0.98719, 0.0413504, -0.154094, 6.51453, 1.65676, -0.57909)
+fov = 50.3066
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="."]
+transform = Transform3D(0.99648, 0, 0.0838344, 0, 1, 0, -0.0838344, 0, 0.99648, -1.53848, 1.62551, -0.480963)
+use_collision = true
+radius = 1.5
+sides = 31
+cone = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.906802, -0.356476, 0.22502, 0.232797, 0.0215531, 0.972287, -0.351446, 0.934056, 0.0634422, -0.435149, 7.62537, -1.81742)
